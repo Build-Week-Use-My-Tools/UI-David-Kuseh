@@ -1,7 +1,14 @@
 .top-content{
     display: flex;
     flex-direction: column;
+}    
 
+@media(max-width: 50rem){
+    .top-content{
+    display: flex;
+    flex-direction: column;
+    }
+}
 
 .company-name-info{
     display: flex;
@@ -9,6 +16,13 @@
     color: white;
     padding: 2rem;
     align-items: baseline;
+}
+
+@media(max-width: 50rem){
+    .company-name-info{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 header {
@@ -22,18 +36,30 @@ nav {
     padding: 2rem;
 }
 
+@media(max-width:500px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 a {
     font-size: 2rem;
     text-decoration: none;
     color:  white;
 }
 
-.header-register{
+.header-info{
     width: 30rem;
     display: flex;
     justify-content: space-around;
     margin-right: -15rem;
+}
 
+@media(max-width:50rem){
+    .header-info{
+        display:none;
+    }
 }
 
 

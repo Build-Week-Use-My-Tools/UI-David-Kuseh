@@ -173,12 +173,17 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
+}
 .top-content {
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 50rem) {
-  .top-content .top-content {
+  .top-content {
     display: flex;
     flex-direction: column;
   }
@@ -190,6 +195,12 @@ body {
   padding: 2rem;
   align-items: baseline;
 }
+@media (max-width: 50rem) {
+  .company-name-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header {
   background-color: black;
 }
@@ -199,20 +210,36 @@ nav {
   justify-content: space-around;
   padding: 2rem;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 a {
   font-size: 2rem;
   text-decoration: none;
   color: white;
 }
-.header-register {
+.header-info {
   width: 30rem;
   display: flex;
   justify-content: space-around;
   margin-right: -15rem;
 }
+@media (max-width: 50rem) {
+  .header-info {
+    display: none;
+  }
+}
 footer {
   background-color: #0E0D0D;
   color: white;
+}
+@media (max-width: 50rem) {
+  footer {
+    width: 100%;
+  }
 }
 footer address {
   font-size: 1.6rem;
@@ -223,28 +250,51 @@ footer address {
 footer h3 {
   padding: 2rem 0;
 }
+@media (max-width: 50rem) {
+  #use-my-tools-info p {
+    width: 80%;
+  }
+}
 body {
   width: 1000px;
   font-family: 'Anton', 'Fjalla One';
   color: white;
 }
-main {
+@media (max-width: 50rem) {
+  body {
+    width: 99%;
+    margin: auto;
+  }
+}
+.container main {
   background-color: #6B686C;
 }
-.company-info {
+.container .company-info {
   display: flex;
   padding: 3rem;
 }
-.company-info p {
+@media (max-width: 50rem) {
+  .container .company-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.container .company-info p {
   width: 30%;
   padding: 1.5rem 0 0 1.5rem;
 }
-.tool-rack-img img {
+@media (max-width: 50rem) {
+  .container .company-info p {
+    width: 100%;
+  }
+}
+.container .tool-rack-img img {
   width: 70rem;
   height: 30rem;
   border-radius: 3rem;
 }
-.how-we-work {
+.container .how-we-work {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,64 +304,81 @@ main {
   margin: 0 3rem 3rem 3rem;
   border: 0.2rem solid black;
 }
-.how-we-work h2 {
+.container .how-we-work h2 {
   color: black;
 }
-.how-we-work li {
+@media (max-width: 50rem) {
+  .container .how-we-work h2 {
+    word-spacing: -0.4rem;
+  }
+}
+.container .how-we-work li {
   font-size: 1.6rem;
   list-style-type: square;
   padding: 1.2rem;
 }
-.user-type h3 {
+.container .user-type h3 {
   text-align: center;
   color: black;
 }
-.user-benefits {
+.container .user-benefits {
   display: flex;
   margin: 0 0 3rem 1rem;
   justify-content: space-between;
 }
-.user-benefits h3 {
+.container .user-benefits h3 {
   color: black;
 }
-.renter {
+.container .renter {
   padding: 3rem;
   background-color: #C84C09;
   border-radius: 5rem;
   margin: 2rem;
   border: 0.2rem solid black;
 }
-.lender {
+.container .lender {
   padding: 3rem;
   background-color: #C84C09;
   border-radius: 5rem;
   margin: 2rem;
   border: 0.2rem solid black;
 }
-.featured-tools h3 {
+.container .featured-tools h3 {
   text-align: center;
   padding: 3rem 0;
   color: black;
 }
-.selected-tools img {
+.container .selected-tools img {
   width: 30rem;
   height: 30rem;
 }
-.selected-tools {
+.container .selected-tools {
   display: flex;
   flex-direction: column;
 }
-.top-tools {
+.container .top-tools {
   display: flex;
   justify-content: space-around;
   padding: 2.5rem 0;
 }
-.bottom-tools {
+@media (max-width: 50rem) {
+  .container .top-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .bottom-tools {
   display: flex;
   justify-content: space-around;
   margin: 0 0 3rem 0;
 }
-.tool {
+@media (max-width: 50rem) {
+  .container .bottom-tools {
+    display: none;
+  }
+}
+.container .tool {
   width: 42rem;
   background-color: #C84C09;
   display: flex;
@@ -322,29 +389,39 @@ main {
   border-radius: 3rem;
   border: 0.2rem solid black;
 }
-.user-feedback {
+@media (max-width: 50rem) {
+  .container .tool {
+    margin: 0 0 2rem 0;
+  }
+}
+.container .user-feedback {
   background-color: #C84C09;
   border-radius: 5rem;
   margin: auto;
   width: 80%;
   border: 0.2rem solid black;
 }
-.user-feedback h3 {
+@media (max-width: 50rem) {
+  .container .user-feedback {
+    margin: auto;
+  }
+}
+.container .user-feedback h3 {
   text-align: center;
   margin: 3rem 0;
   color: black;
 }
-.user-feedback p {
+.container .user-feedback p {
   border-radius: 3rem;
   width: 80%;
   margin: auto;
 }
-.post-button {
+.container .post-button {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
 }
-.post-button button {
+.container .post-button button {
   border-radius: 10rem;
   background-color: #C84C09;
 }

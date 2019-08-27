@@ -4,149 +4,207 @@ body {
     color: white;
 }
 
-main {
-    background-color: #6B686C;
+@media(max-width: 50rem){
+    body{
+        width: 99%;
+        margin: auto;
+    }
 }
 
-.company-info{
-    display: flex;
-    padding: 3rem;
+.container{
+    main {
+        background-color: #6B686C;
+    }
+
+    .company-info{
+        display: flex;
+        padding: 3rem;
+    }
+
+    @media(max-width: 50rem){
+        .company-info{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    
+    .company-info p{
+        width: 30%;
+        padding: 1.5rem 0 0 1.5rem;
+    }
+
+    @media(max-width: 50rem){
+        .company-info p{
+            width: 100%;
+        }
+    }
+    
+    .tool-rack-img img{
+        width: 70rem;
+        height: 30rem;
+        border-radius: 3rem;
+    }
+    
+    .how-we-work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        background-color: #C84C09;
+        border-radius: 5rem;
+        margin: 0 3rem 3rem 3rem;
+        border: 0.2rem solid black;
+    }
+    
+    .how-we-work h2{
+        color: black;
+    }
+
+    @media(max-width: 50rem){
+        .how-we-work h2{
+            word-spacing: -0.4rem;
+        }
+    }
+    
+    .how-we-work li{
+        font-size: 1.6rem;
+        list-style-type: square;
+        padding: 1.2rem;
+    }
+    
+    .user-type h3{
+        text-align: center;
+        color: black;
+    }
+    
+    .user-benefits{
+        display: flex;
+        margin: 0 0 3rem 1rem;
+        justify-content: space-between;
+    }
+    
+    .user-benefits h3{
+        color: black;
+    }
+    
+    .renter{
+        padding: 3rem;
+        background-color: #C84C09;
+        border-radius: 5rem;
+        margin: 2rem;
+        border: 0.2rem solid black;
+    }
+    
+    .lender{
+        padding: 3rem;
+        background-color: #C84C09;
+        border-radius: 5rem;
+        margin: 2rem;
+        border: 0.2rem solid black;
+    }
+    
+    .featured-tools h3{
+        text-align: center;
+        padding: 3rem 0;
+        color: black;
+    }
+    
+    .selected-tools img{
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .selected-tools{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .top-tools{
+        display: flex;
+        justify-content: space-around;
+        padding: 2.5rem 0;
+    }
+
+    @media(max-width:50rem){
+        .top-tools{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    .bottom-tools{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 3rem 0;
+    }
+
+    @media(max-width:50rem){
+        .bottom-tools{
+            display: none;
+        }
+    }
+    
+    .tool{
+        width: 42rem;
+        background-color: #C84C09;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0 0 0 6rem;
+        border-radius: 3rem;
+        border: 0.2rem solid black;
+    }
+
+    @media(max-width:50rem){
+        .tool{
+           margin: 0 0 2rem 0;
+        }
+    }
+    
+    .user-feedback{
+        background-color: #C84C09;
+        border-radius: 5rem;
+        margin:auto;
+        width: 80%;
+        border: 0.2rem solid black;
+    }
+
+    @media(max-width: 50rem){
+        .user-feedback{
+            margin:auto;
+        }
+    }
+    
+    .user-feedback h3{
+        text-align: center;
+        margin: 3rem 0;
+        color: black;
+    }
+    
+    .user-feedback p{
+        border-radius: 3rem;
+        width: 80%;
+        margin:auto;
+    }
+    
+    .post-button{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    
+    .post-button button{
+        border-radius: 10rem;
+        background-color: #C84C09; 
+    }
 }
 
-.company-info p{
-    width: 30%;
-    padding: 1.5rem 0 0 1.5rem;
-}
 
-.tool-rack-img img{
-    width: 70rem;
-    height: 30rem;
-    border-radius: 3rem;
-}
 
-.how-we-work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    background-color: #C84C09;
-    border-radius: 5rem;
-    margin: 0 3rem 3rem 3rem;
-    border: 0.2rem solid black;
-}
 
-.how-we-work h2{
-    color: black;
-}
-
-.how-we-work li{
-    font-size: 1.6rem;
-    list-style-type: square;
-    padding: 1.2rem;
-}
-
-.user-type h3{
-    text-align: center;
-    color: black;
-}
-
-.user-benefits{
-    display: flex;
-    margin: 0 0 3rem 1rem;
-    justify-content: space-between;
-}
-
-.user-benefits h3{
-    color: black;
-}
-
-.renter{
-    padding: 3rem;
-    background-color: #C84C09;
-    border-radius: 5rem;
-    margin: 2rem;
-    border: 0.2rem solid black;
-}
-
-.lender{
-    padding: 3rem;
-    background-color: #C84C09;
-    border-radius: 5rem;
-    margin: 2rem;
-    border: 0.2rem solid black;
-}
-
-.featured-tools h3{
-    text-align: center;
-    padding: 3rem 0;
-    color: black;
-
-}
-
-.selected-tools img{
-    width: 30rem;
-    height: 30rem;
-}
-
-.selected-tools{
-    display: flex;
-    flex-direction: column;
-}
-
-.top-tools{
-    display: flex;
-    justify-content: space-around;
-    padding: 2.5rem 0;
-}
-
-.bottom-tools{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 3rem 0;
-}
-
-.tool{
-    width: 42rem;
-    background-color: #C84C09;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    padding: 0 0 0 6rem;
-    border-radius: 3rem;
-    border: 0.2rem solid black;
-}
-
-.user-feedback{
-    background-color: #C84C09;
-    border-radius: 5rem;
-    margin:auto;
-    width: 80%;
-    border: 0.2rem solid black;
-}
-
-.user-feedback h3{
-    text-align: center;
-    margin: 3rem 0;
-    color: black;
-}
-
-.user-feedback p{
-    border-radius: 3rem;
-    width: 80%;
-    margin:auto;
-}
-
-.post-button{
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-}
-
-.post-button button{
-    border-radius: 10rem;
-    background-color: #C84C09; 
-}
 
 
 
