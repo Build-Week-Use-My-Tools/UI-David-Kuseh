@@ -1,9 +1,9 @@
 footer{
-    background-color: #0E0D0D;
-    color: white;
+    background-color: @headerColor;
+    color: @textContentColor;
 }
 
-@media(max-width: 50rem){
+@media @mobile{
     footer{
         width:100%;
     }
@@ -31,20 +31,20 @@ footer h3{
     margin: auto;
 }
 
-@media(max-width:50rem){
+@media @mobile{
     #use-my-tools-info h3{
         text-align: center;
     }
 }
 
-@media(max-width:50rem){
+@media @mobile{
     #use-my-tools-info p{
         text-align: center;
         padding: 0 2rem 0 2rem;
     }
 }
 
-@media(max-width:50rem){
+@media @mobile{
     #contact-info {
         text-align: center;
     }

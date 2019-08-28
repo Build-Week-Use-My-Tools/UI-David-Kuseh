@@ -5,30 +5,28 @@
 
 @media(max-width: 50rem){
     .top-content{
-    display: flex;
-    flex-direction: column;
+        .titledContent();
     }
 }
 
 .company-name-info{
     display: flex;
     justify-content: space-around;
-    color: white;
+    color: @textContentColor;
     padding: 2rem;
     align-items: baseline;
 }
 
 @media(max-width: 50rem){
     .company-name-info{
-        display: flex;
-        flex-direction: column;
+        .titledContent();
         align-items: center;
         margin-top: 2rem;
     }
 }
 
 header {
-    background-color: black;
+    background-color: @headerColor;
 }
 
 nav {
@@ -40,8 +38,7 @@ nav {
 
 @media(max-width:500px){
     nav {
-        display: flex;
-        flex-direction: column;
+        .titledContent();
         align-items: center;
     }
 }
@@ -49,13 +46,13 @@ nav {
 a {
     font-size: 2rem;
     text-decoration: none;
-    color:  white;
+    color:  @textContentColor;
 }
 
 @media(max-width:50rem){
     nav a{
         margin: 0 0 1.5rem 0;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid @textContentColor;
     }
 }
 
