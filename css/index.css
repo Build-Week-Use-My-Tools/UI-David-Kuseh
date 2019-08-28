@@ -246,6 +246,15 @@ a {
     margin-bottom: 3rem;
   }
 }
+.button {
+  background-color: #C84C09;
+  padding: 1.2rem;
+  border-radius: 2.5rem;
+}
+.button:hover {
+  background-color: grey;
+  color: black;
+}
 footer {
   background-color: #0E0D0D;
   color: #FFFFFF;
