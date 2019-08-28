@@ -255,6 +255,20 @@ a {
   background-color: grey;
   color: black;
 }
+.about_heading h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+.about_nav a {
+  background-color: orange;
+  padding: 1.2rem;
+  border-radius: 2.5rem;
+  color: white;
+}
+.about_nav a:hover {
+  background-color: grey;
+  color: black;
+}
 footer {
   background-color: #0E0D0D;
   color: #FFFFFF;
@@ -482,4 +496,10 @@ main {
 .bottom {
   display: flex;
   justify-content: space-around;
+}
+#team_members .git_img {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
