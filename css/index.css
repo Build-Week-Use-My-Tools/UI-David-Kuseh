@@ -252,7 +252,7 @@ a {
   border-radius: 2.5rem;
 }
 .button:hover {
-  background-color: #6B686C;
+  background-color: #ECECEC;
   color: #0E0D0D;
 }
 .about_heading h1 {
@@ -266,7 +266,7 @@ a {
   color: #FFFFFF;
 }
 .about_nav a:hover {
-  background-color: #6B686C;
+  background-color: #ECECEC;
   color: #0E0D0D;
 }
 footer {
@@ -318,7 +318,7 @@ footer h3 {
 body {
   width: 1000px;
   font-family: 'Anton', 'Fjalla One';
-  color: #FFFFFF;
+  color: #0E0D0D;
 }
 @media (max-width: 50rem) {
   body {
@@ -327,7 +327,7 @@ body {
   }
 }
 main {
-  background-color: #6B686C;
+  background-color: #ECECEC;
 }
 .company-info {
   display: flex;
