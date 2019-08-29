@@ -472,6 +472,11 @@ main {
   width: 100%;
   height: 50rem;
 }
+@media (max-width: 50rem) {
+  .about_us_img img {
+    display: none;
+  }
+}
 .mission {
   display: flex;
   flex-direction: column;
@@ -480,12 +485,35 @@ main {
   height: 46rem;
   font-weight: bold;
 }
+@media (max-width: 50rem) {
+  .mission {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission h2 {
+    text-align: center;
+    padding: 2rem 0 ;
+  }
+  .mission p {
+    width: 90%;
+    text-align: center;
+  }
+}
 #team_members {
   padding: 3rem 0;
 }
+@media (max-width: 50rem) {
+  #team_members {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #team_members img {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 5rem;
 }
 .top {
@@ -502,4 +530,42 @@ main {
   height: 2rem;
   display: flex;
   align-items: center;
+}
+#team_members h2 {
+  text-align: center;
+  color: black;
+  padding: 2rem 0;
+}
+#team_members h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.6rem 0;
+  color: black;
+}
+.member {
+  background-color: orange;
+  padding: 2rem;
+  border: 0.2rem solid black;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+}
+@media (max-width: 50rem) {
+  .member {
+    width: 45%;
+    margin: auto;
+  }
+}
+@media (max-width: 50rem) {
+  .top {
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 50rem) {
+  .bottom {
+    flex-wrap: wrap;
+  }
 }
