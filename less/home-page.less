@@ -1,7 +1,7 @@
 body {
     width: 1000px;
     font-family: 'Anton', 'Fjalla One';
-    color: @textContentColor;
+    color: @headerColor;
 }
 
 @media @mobile{
@@ -43,7 +43,7 @@ body {
         border-radius: 3rem;
     }
     
-    .how-we-work{
+    #how-we-work{
         .titledContent();
         align-items: center;
         padding: 3rem;
@@ -51,58 +51,75 @@ body {
         border-radius: 5rem;
         margin: 0 3rem 3rem 3rem;
         border: 0.2rem solid @headerColor;
+        width: 70%;
+        margin: auto;
     }
     
-    .how-we-work h2{
+    #how-we-work h2{
         color: @headerColor;
     }
 
     @media @mobile{
-        .how-we-work h2{
+        #how-we-work h2{
             text-align: center;
         }
     }
     
-    .how-we-work li{
+    #how-we-work li{
         font-size: 1.6rem;
         list-style-type: square;
         padding: 1.2rem;
     }
+
+    //user type
     
     .user-type h3{
         text-align: center;
         color: @headerColor;
+        padding: 3rem 0 0 0;
     }
-    
+
     .user-benefits{
         display: flex;
         justify-content: space-between;
-        margin: 0 0 3rem 1rem;
+        width: 98%;
+        margin: auto;
+    }
+
+    .renter{
+        .cardFormat();
+    }
+
+    .lender{
+        .cardFormat();
     }
     
     .user-benefits h3{
         color: @headerColor;
+        padding: 0 0 2rem 0;
     }
     
-    .renter{
-      .cardFormat();
-    }
-    
-    .lender{
-      .cardFormat();
-    }
-    
+
+    //selected tools
     .featured-tools h3{
         text-align: center;
         padding: 3rem 0;
         color: @headerColor;
     }
-    
-    .selected-tools img{
-        width: 30rem;
-        height: 30rem;
+
+    .featured-tools p{
+        text-align: center;
+        margin: 0 0 0 -3rem;
     }
     
+    @media @tablet{
+        .tool img{
+            width: 70%;
+            margin: 0 0 0 3rem;
+            padding: 1rem 0 0 0
+        }
+    }
+
     .top-tools{
         display: flex;
         justify-content: space-around;
@@ -129,7 +146,7 @@ body {
     }
     
     .tool{
-        width: 42rem;
+        width: 42%;
         background-color: @cardColor;
         padding: 0 0 0 6rem;
         border-radius: 3rem;
@@ -139,9 +156,17 @@ body {
     @media @mobile{
         .tool{
            margin: 0 0 2rem 0;
+           width: 75%;
         }
     }
-    
+
+    @media @mobile{
+        .tool img{
+            width:90%;
+            margin: 0 0 0 -1.3rem;
+        }
+    }
+
     .user-feedback{
         background-color: @cardColor;
         border-radius: 5rem;
@@ -155,7 +180,7 @@ body {
             margin:auto;
         }
     }
-    
+
     .user-feedback h3{
         text-align: center;
         margin: 3rem 0;
@@ -169,30 +194,58 @@ body {
     }
 
 
-    //about us page
+//about us page
      .about_us_img img {
         width: 100%;
-       height: 50rem;
+       height: 30rem;
+   }
+
+   @media @mobile{
+       .about_us_img img{
+           display: none;
+       }
    }
 
    .mission{
-       display: flex;
-       flex-direction: column;
-       margin: -47rem 0 0 5rem;
+       .titledContent();
+       margin: -25rem 0 0 5rem;
        width: 90%;
-       height: 46rem; 
+       height: 30rem; 
        font-weight: bold;
+       word-spacing: 0.3rem;
+       text-align: center;
+       align-items: center;
+   }
+
+   @media @mobile {
+       .mission {
+           width: 90%;
+           margin:auto;
+           .titledContent();
+           align-items: center;
+       }
+
+       .mission h2{
+           text-align: center;
+           padding: 2rem 0 ;
+       }
+
+       .mission p{
+           width: 90%;
+           text-align: center;
+       }
    }
 
    //Meet the team
-
-#team_members{
-    padding: 3rem 0;
+@media @mobile{
+    #team_members{
+        .titledContent();
+    }
 }
 
    #team_members img{
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
         border-radius: 5rem;
    }
 
@@ -205,6 +258,7 @@ body {
    .bottom{
     display: flex;
     justify-content: space-around;
+    padding: 0 0 2rem 0;
 }
 
 #team_members .git_img{
@@ -214,10 +268,51 @@ body {
     align-items:center;
 }
 
+#team_members h2{
+    text-align: center;
+    color:@headerColor;
+    padding: 2rem 0;
+}
+
+#team_members h3{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.6rem 0;
+    color:@headerColor;
+}
+
+.member{
+    background-color: @cardColor;
+    padding: 2rem;
+    border: 0.2rem solid @headerColor;
+    border-radius: 2.5rem;
+    .titledContent();
+    align-items:center;
+    width: 22%;
+}
+
+@media @mobile{
+    .member{
+        width: 45%;
+        margin: auto;
+    }
+}
+
+@media @mobile{
+    .top{
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+}
+
+@media @mobile{
+    .bottom{
+        flex-wrap: wrap;
+    }
+}
 
 
 
-   
 
 
 

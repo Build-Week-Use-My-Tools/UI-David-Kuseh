@@ -252,22 +252,22 @@ a {
   border-radius: 2.5rem;
 }
 .button:hover {
-  background-color: grey;
-  color: black;
+  background-color: #ECECEC;
+  color: #0E0D0D;
 }
 .about_heading h1 {
   text-align: center;
   padding: 2rem 0;
 }
 .about_nav a {
-  background-color: orange;
+  background-color: #C84C09;
   padding: 1.2rem;
   border-radius: 2.5rem;
-  color: white;
+  color: #FFFFFF;
 }
 .about_nav a:hover {
-  background-color: grey;
-  color: black;
+  background-color: #ECECEC;
+  color: #0E0D0D;
 }
 footer {
   background-color: #0E0D0D;
@@ -318,7 +318,7 @@ footer h3 {
 body {
   width: 1000px;
   font-family: 'Anton', 'Fjalla One';
-  color: #FFFFFF;
+  color: #0E0D0D;
 }
 @media (max-width: 50rem) {
   body {
@@ -327,7 +327,7 @@ body {
   }
 }
 main {
-  background-color: #6B686C;
+  background-color: #ECECEC;
 }
 .company-info {
   display: flex;
@@ -354,7 +354,7 @@ main {
   height: 30rem;
   border-radius: 3rem;
 }
-.how-we-work {
+#how-we-work {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,16 +363,18 @@ main {
   border-radius: 5rem;
   margin: 0 3rem 3rem 3rem;
   border: 0.2rem solid #0E0D0D;
+  width: 70%;
+  margin: auto;
 }
-.how-we-work h2 {
+#how-we-work h2 {
   color: #0E0D0D;
 }
 @media (max-width: 50rem) {
-  .how-we-work h2 {
+  #how-we-work h2 {
     text-align: center;
   }
 }
-.how-we-work li {
+#how-we-work li {
   font-size: 1.6rem;
   list-style-type: square;
   padding: 1.2rem;
@@ -380,37 +382,49 @@ main {
 .user-type h3 {
   text-align: center;
   color: #0E0D0D;
+  padding: 3rem 0 0 0;
 }
 .user-benefits {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 3rem 1rem;
+  width: 98%;
+  margin: auto;
+}
+.renter {
+  width: 80%;
+  background-color: #C84C09;
+  border: 0.2rem solid #0E0D0D;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 5rem;
+}
+.lender {
+  width: 80%;
+  background-color: #C84C09;
+  border: 0.2rem solid #0E0D0D;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 5rem;
 }
 .user-benefits h3 {
   color: #0E0D0D;
-}
-.renter {
-  padding: 3rem;
-  background-color: #C84C09;
-  border-radius: 5rem;
-  margin: 2rem;
-  border: 0.2rem solid #0E0D0D;
-}
-.lender {
-  padding: 3rem;
-  background-color: #C84C09;
-  border-radius: 5rem;
-  margin: 2rem;
-  border: 0.2rem solid #0E0D0D;
+  padding: 0 0 2rem 0;
 }
 .featured-tools h3 {
   text-align: center;
   padding: 3rem 0;
   color: #0E0D0D;
 }
-.selected-tools img {
-  width: 30rem;
-  height: 30rem;
+.featured-tools p {
+  text-align: center;
+  margin: 0 0 0 -3rem;
+}
+@media (max-width:80rem) {
+  .tool img {
+    width: 70%;
+    margin: 0 0 0 3rem;
+    padding: 1rem 0 0 0;
+  }
 }
 .top-tools {
   display: flex;
@@ -435,7 +449,7 @@ main {
   }
 }
 .tool {
-  width: 42rem;
+  width: 42%;
   background-color: #C84C09;
   padding: 0 0 0 6rem;
   border-radius: 3rem;
@@ -444,6 +458,13 @@ main {
 @media (max-width: 50rem) {
   .tool {
     margin: 0 0 2rem 0;
+    width: 75%;
+  }
+}
+@media (max-width: 50rem) {
+  .tool img {
+    width: 90%;
+    margin: 0 0 0 -1.3rem;
   }
 }
 .user-feedback {
@@ -470,22 +491,50 @@ main {
 }
 .about_us_img img {
   width: 100%;
-  height: 50rem;
+  height: 30rem;
+}
+@media (max-width: 50rem) {
+  .about_us_img img {
+    display: none;
+  }
 }
 .mission {
   display: flex;
   flex-direction: column;
-  margin: -47rem 0 0 5rem;
+  margin: -25rem 0 0 5rem;
   width: 90%;
-  height: 46rem;
+  height: 30rem;
   font-weight: bold;
+  word-spacing: 0.3rem;
+  text-align: center;
+  align-items: center;
 }
-#team_members {
-  padding: 3rem 0;
+@media (max-width: 50rem) {
+  .mission {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission h2 {
+    text-align: center;
+    padding: 2rem 0 ;
+  }
+  .mission p {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (max-width: 50rem) {
+  #team_members {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #team_members img {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 5rem;
 }
 .top {
@@ -496,10 +545,49 @@ main {
 .bottom {
   display: flex;
   justify-content: space-around;
+  padding: 0 0 2rem 0;
 }
 #team_members .git_img {
   width: 2rem;
   height: 2rem;
   display: flex;
   align-items: center;
+}
+#team_members h2 {
+  text-align: center;
+  color: #0E0D0D;
+  padding: 2rem 0;
+}
+#team_members h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.6rem 0;
+  color: #0E0D0D;
+}
+.member {
+  background-color: #C84C09;
+  padding: 2rem;
+  border: 0.2rem solid #0E0D0D;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+}
+@media (max-width: 50rem) {
+  .member {
+    width: 45%;
+    margin: auto;
+  }
+}
+@media (max-width: 50rem) {
+  .top {
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 50rem) {
+  .bottom {
+    flex-wrap: wrap;
+  }
 }
