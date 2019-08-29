@@ -252,22 +252,22 @@ a {
   border-radius: 2.5rem;
 }
 .button:hover {
-  background-color: grey;
-  color: black;
+  background-color: #6B686C;
+  color: #0E0D0D;
 }
 .about_heading h1 {
   text-align: center;
   padding: 2rem 0;
 }
 .about_nav a {
-  background-color: orange;
+  background-color: #C84C09;
   padding: 1.2rem;
   border-radius: 2.5rem;
-  color: white;
+  color: #FFFFFF;
 }
 .about_nav a:hover {
-  background-color: grey;
-  color: black;
+  background-color: #6B686C;
+  color: #0E0D0D;
 }
 footer {
   background-color: #0E0D0D;
@@ -354,7 +354,7 @@ main {
   height: 30rem;
   border-radius: 3rem;
 }
-.how-we-work {
+#how-we-work {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,15 +364,15 @@ main {
   margin: 0 3rem 3rem 3rem;
   border: 0.2rem solid #0E0D0D;
 }
-.how-we-work h2 {
+#how-we-work h2 {
   color: #0E0D0D;
 }
 @media (max-width: 50rem) {
-  .how-we-work h2 {
+  #how-we-work h2 {
     text-align: center;
   }
 }
-.how-we-work li {
+#how-we-work li {
   font-size: 1.6rem;
   list-style-type: square;
   padding: 1.2rem;
@@ -407,6 +407,10 @@ main {
   text-align: center;
   padding: 3rem 0;
   color: #0E0D0D;
+}
+.featured-tools p {
+  text-align: center;
+  margin: 0 0 0 -3rem;
 }
 .selected-tools img {
   width: 30rem;
@@ -470,7 +474,7 @@ main {
 }
 .about_us_img img {
   width: 100%;
-  height: 50rem;
+  height: 30rem;
 }
 @media (max-width: 50rem) {
   .about_us_img img {
@@ -480,10 +484,13 @@ main {
 .mission {
   display: flex;
   flex-direction: column;
-  margin: -47rem 0 0 5rem;
+  margin: -25rem 0 0 5rem;
   width: 90%;
-  height: 46rem;
+  height: 30rem;
   font-weight: bold;
+  word-spacing: 0.3rem;
+  text-align: center;
+  align-items: center;
 }
 @media (max-width: 50rem) {
   .mission {
@@ -501,9 +508,6 @@ main {
     width: 90%;
     text-align: center;
   }
-}
-#team_members {
-  padding: 3rem 0;
 }
 @media (max-width: 50rem) {
   #team_members {
@@ -524,6 +528,7 @@ main {
 .bottom {
   display: flex;
   justify-content: space-around;
+  padding: 0 0 2rem 0;
 }
 #team_members .git_img {
   width: 2rem;
@@ -533,19 +538,19 @@ main {
 }
 #team_members h2 {
   text-align: center;
-  color: black;
+  color: #0E0D0D;
   padding: 2rem 0;
 }
 #team_members h3 {
   font-size: 1.6rem;
   text-align: center;
   padding: 0.6rem 0;
-  color: black;
+  color: #0E0D0D;
 }
 .member {
-  background-color: orange;
+  background-color: #C84C09;
   padding: 2rem;
-  border: 0.2rem solid black;
+  border: 0.2rem solid #0E0D0D;
   border-radius: 2.5rem;
   display: flex;
   flex-direction: column;
