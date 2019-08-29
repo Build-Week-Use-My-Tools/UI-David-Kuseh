@@ -51,6 +51,8 @@ body {
         border-radius: 5rem;
         margin: 0 3rem 3rem 3rem;
         border: 0.2rem solid @headerColor;
+        width: 70%;
+        margin: auto;
     }
     
     #how-we-work h2{
@@ -68,30 +70,37 @@ body {
         list-style-type: square;
         padding: 1.2rem;
     }
+
+    //user type
     
     .user-type h3{
         text-align: center;
         color: @headerColor;
+        padding: 3rem 0 0 0;
     }
-    
+
     .user-benefits{
         display: flex;
         justify-content: space-between;
-        margin: 0 0 3rem 1rem;
+        width: 98%;
+        margin: auto;
+    }
+
+    .renter{
+        .cardFormat();
+    }
+
+    .lender{
+        .cardFormat();
     }
     
     .user-benefits h3{
         color: @headerColor;
+        padding: 0 0 2rem 0;
     }
     
-    .renter{
-      .cardFormat();
-    }
-    
-    .lender{
-      .cardFormat();
-    }
-    
+
+    //selected tools
     .featured-tools h3{
         text-align: center;
         padding: 3rem 0;
@@ -103,11 +112,14 @@ body {
         margin: 0 0 0 -3rem;
     }
     
-    .selected-tools img{
-        width: 30rem;
-        height: 30rem;
+    @media @tablet{
+        .tool img{
+            width: 70%;
+            margin: 0 0 0 3rem;
+            padding: 1rem 0 0 0
+        }
     }
-    
+
     .top-tools{
         display: flex;
         justify-content: space-around;
@@ -134,7 +146,7 @@ body {
     }
     
     .tool{
-        width: 42rem;
+        width: 42%;
         background-color: @cardColor;
         padding: 0 0 0 6rem;
         border-radius: 3rem;
@@ -144,9 +156,17 @@ body {
     @media @mobile{
         .tool{
            margin: 0 0 2rem 0;
+           width: 75%;
         }
     }
-    
+
+    @media @mobile{
+        .tool img{
+            width:90%;
+            margin: 0 0 0 -1.3rem;
+        }
+    }
+
     .user-feedback{
         background-color: @cardColor;
         border-radius: 5rem;
@@ -160,7 +180,7 @@ body {
             margin:auto;
         }
     }
-    
+
     .user-feedback h3{
         text-align: center;
         margin: 3rem 0;
