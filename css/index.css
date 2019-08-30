@@ -419,6 +419,17 @@ main {
   text-align: center;
   margin: 0 0 0 -3rem;
 }
+.tool {
+  width: 42%;
+  background-color: #C84C09;
+  padding: 0 0 0 6rem;
+  border-radius: 3rem;
+  border: 0.2rem solid #0E0D0D;
+}
+.tool img {
+  margin: 0 0 0 -3rem;
+  border-radius: 5rem;
+}
 @media (max-width:80rem) {
   .tool img {
     width: 70%;
@@ -447,13 +458,6 @@ main {
   .bottom-tools {
     display: none;
   }
-}
-.tool {
-  width: 42%;
-  background-color: #C84C09;
-  padding: 0 0 0 6rem;
-  border-radius: 3rem;
-  border: 0.2rem solid #0E0D0D;
 }
 @media (max-width: 50rem) {
   .tool {
