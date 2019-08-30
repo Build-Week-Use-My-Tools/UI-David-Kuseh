@@ -581,7 +581,7 @@ main {
 @media (max-width: 50rem) {
   .member {
     width: 45%;
-    margin: auto;
+    margin: 2rem 0;
   }
 }
 @media (max-width: 50rem) {
